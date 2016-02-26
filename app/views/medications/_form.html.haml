@@ -1,0 +1,40 @@
+= form_for @medication do |f|
+  - if @medication.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@medication.errors.count, "error")} prohibited this medication from being saved:"
+      %ul
+        - @medication.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :name
+    = f.text_field :name
+  .field
+    = f.label :description
+    = f.text_area :description
+  .field
+    = f.label :whyoneq, "Why... "
+    = f.text_field :whyoneq
+  .field
+    = f.label :whyonea, "Answer to Why"
+    = f.text_area :whyonea
+  .field
+    = f.label :whytwoq, "Why... "
+    = f.text_field :whytwoq
+  .field
+    = f.label :whytwoa, "Answer to Why"
+    = f.text_area :whytwoa
+  .field
+    = f.label :whythreeq, "Why... "
+    = f.text_field :whythreeq
+  .field
+    = f.label :whythreea, "Answer to Why"
+    = f.text_area :whythreea
+  .field
+    = f.label :whyfourq, "Why... "
+    = f.text_field :whyfourq
+  .field
+    = f.label :whyfoura, "Answer to Why"
+    = f.text_area :whyfoura
+  .actions
+    = f.submit 'Save'

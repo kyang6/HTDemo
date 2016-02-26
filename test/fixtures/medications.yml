@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyText
+  whyoneq: MyString
+  whyonea: MyText
+  whytwoq: MyString
+  whytwoa: MyText
+  whythreeq: MyString
+  whythreea: MyText
+  whyfourq: MyString
+  whyfoura: MyText
+
+two:
+  name: MyString
+  description: MyText
+  whyoneq: MyString
+  whyonea: MyText
+  whytwoq: MyString
+  whytwoa: MyText
+  whythreeq: MyString
+  whythreea: MyText
+  whyfourq: MyString
+  whyfoura: MyText

@@ -1,0 +1,39 @@
+
+%p#notice= notice
+
+%p
+  %h1= @medication.name
+%p
+  %b Description:
+  = @medication.description
+-if @medication.whyoneq != ""
+  %h2= @medication.whyoneq
+
+-if @medication.whyonea != ""
+  %p
+    = @medication.whyonea
+
+-if @medication.whytwoq != ""
+  %h2= @medication.whytwoq
+
+-if @medication.whytwoa != ""
+  %p
+    = @medication.whytwoa
+
+-if @medication.whythreeq != ""
+  %h2= @medication.whythreeq
+
+-if @medication.whythreea != ""
+  %p
+    = @medication.whythreea
+
+-if @medication.whyfourq != ""
+  %h2= @medication.whyfourq
+
+-if @medication.whyfoura != ""
+  %p
+    = @medication.whyfoura
+
+= link_to 'Edit', edit_medication_path(@medication)
+\|
+= link_to 'Back', medications_path

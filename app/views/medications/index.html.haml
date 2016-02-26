@@ -1,0 +1,25 @@
+%h1 Listing medications
+
+%table
+  %thead
+    %tr
+      %th Name
+      %th Description
+      %th Most Common Question
+      %th
+      %th
+      %th
+
+  %tbody
+    - @medications.each do |medication|
+      %tr
+        %td= medication.name
+        %td= medication.description
+        %td= medication.whyoneq
+        %td= link_to 'Show', medication
+        %td= link_to 'Edit', edit_medication_path(medication)
+        %td= link_to 'Destroy', medication, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Medication', new_medication_path
